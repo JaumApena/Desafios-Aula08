@@ -1,0 +1,53 @@
+package desafiosAula0;
+import java.util.Scanner;
+
+public class desafio03 {
+    public static void main (String[] args) {
+
+	Scanner scanner = new Scanner(System.in);
+	
+	System.out.println("digite um numero de 1 a 7 : ");
+	int numero = scanner.nextInt();
+	
+	String diaSem;
+	
+	switch (numero) {
+	case 1: 
+		diaSem = "Domingo, Final de semana!";
+		break;
+		
+	case 2: 
+		diaSem = "Segunda, Dia útil!";
+		break;
+		
+	case 3: 
+		diaSem = "Terça, Dia útil!";
+		break;
+		
+	case 4: 
+		diaSem = "Quarta, Dia útil!";
+		break;
+		
+	case 5: 
+		diaSem = "Quinta, Dia útil!";
+		break;
+		
+	case 6: 
+		diaSem = "Sexta, Dia útil!";
+		break;
+		
+	case 7: 
+		diaSem = "Sabado, Final de Semana!";
+		break;
+		
+	default : 
+		diaSem = "Dia inválido!";
+		break;
+	}
+	
+	System.out.println("O dia da semana é " + diaSemana);
+
+	scanner.close();
+
+}
+}
