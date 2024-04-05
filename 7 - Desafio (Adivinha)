@@ -1,0 +1,36 @@
+package desafiosAula08;
+
+    import java.util.Random;
+    import java.util.Scanner;
+
+public class desafio07 {
+
+        public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+        
+        System.out.println("Advinhe o número aleatório entre (0 e 100): ");
+        int nmr = random.nextInt(100);
+        int tent = scanner.nextInt();
+        
+        do {
+        
+        if (tent > nmr) {
+        System.out.println("O número é menor!");
+        }
+        
+        else if (tent < nmr) {
+        System.out.println("O número é maior!");
+        }
+      
+        System.out.println("Tente novamente com esta dica!");  
+        tent = scanner.nextInt(); 
+        }
+        
+        while (tent != nmr);
+        System.out.println("Parabéns, Você acertou o número era: " + nmr + "!");
+
+               scanner.close();
+
+          }
+}
