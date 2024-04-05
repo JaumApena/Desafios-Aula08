@@ -1,0 +1,22 @@
+package desafiosAula08;
+import java.util.Scanner;
+
+public class desafio04 {
+public static void main(String[] args){
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("Digite um número inteiro e positivo: ");
+int nmr = scanner.nextInt();    
+
+int cont = 1;
+int fat = 1;
+
+while (cont <= nmr ) {
+    fat *= cont;
+    cont++; }
+
+System.out.println("O resultado fatorial é: " + fat );
+
+             scanner.close();
+       }
+}
